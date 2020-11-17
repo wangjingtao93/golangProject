@@ -1,0 +1,27 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "NJKnHy8vaUoIZoPt/1lUrkU+GvY=",
+			"path": "github.com/agiledragon/gomonkey",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "9FqtMhtuftXdTzflhBixU1gH6vk=",
+			"path": "github.com/go-xorm/builder",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "s9ifd5a/RcOLmmMrNECH4K1fkX0=",
+			"path": "github.com/go-xorm/xorm",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "tzcUwQrH1EMR+RPvTE1Ico6kqT4=",
+			"path": "github.com/smartystreets/goconvey/convey",
+			"revision": ""
+		}
+	],
+	"rootPath": "wjt-source"
+}

@@ -1,0 +1,76 @@
+#apiVersio和kind都是kubectl explain pv可查询的,pv是没有ns的，他是属于集群的
+apiVersion: v1 
+kind: PersistentVolume
+metadata:
+  name: pv001
+  labels:
+    name: pv001
+spec:
+  nfs:
+    path: /data/volumes/v1
+    server: 192.168.56.133
+  accessModes: ["ReadWriteMany", "ReadWriteOnce"]#必须字段
+  #必须字段
+  capacity:
+    storage: 2Gi
+---
+apiVersion: v1 
+kind: PersistentVolume
+metadata:
+  name: pv002
+  labels:
+    name: pv002
+spec:
+  nfs:
+    path: /data/volumes/v2
+    server: 192.168.56.133
+  accessModes: ["ReadWriteMany", "ReadWriteOnce"]#必须字段
+  #必须字段
+  capacity:
+    storage: 5Gi
+---
+apiVersion: v1 
+kind: PersistentVolume
+metadata:
+  name: pv003
+  labels:
+    name: pv003
+spec:
+  nfs:
+    path: /data/volumes/v3
+    server: 192.168.56.133
+  accessModes: ["ReadWriteMany", "ReadWriteOnce"]#必须字段
+  #必须字段
+  capacity:
+    storage: 2Gi
+---
+apiVersion: v1 
+kind: PersistentVolume
+metadata:
+  name: pv004
+  labels:
+    name: pv004
+spec:
+  nfs:
+    path: /data/volumes/v4
+    server: 192.168.56.133
+  accessModes: ["ReadWriteMany", "ReadWriteOnce"]#必须字段
+  #必须字段
+  capacity:
+    storage: 2Gi
+---
+apiVersion: v1 
+kind: PersistentVolume
+metadata:
+  name: pv005
+  labels:
+    name: pv005
+spec:
+  nfs:
+    path: /data/volumes/v5
+    server: 192.168.56.133
+  accessModes: ["ReadWriteMany", "ReadWriteOnce"]#必须字段
+  #必须字段
+  capacity:
+    storage: 2Gi
+

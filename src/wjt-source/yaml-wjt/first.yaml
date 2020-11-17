@@ -1,0 +1,28 @@
+SiteName: seeta
+SiteAddr: BeiJing
+Https: true
+Nginx:
+    Port: 443
+    LogPath: "/var/log/nginx/nginx.log"
+    Path: "/opt/nginx/"
+test:
+    user:
+        - Tom
+        - Lily
+        - Skay
+    
+    mqtt:
+        host: localhost:1883
+        username: test
+        password: test
+    
+    http: {port: "8080", host: "127.0.0.1"}
+test_url:
+    -
+        name:       siteName1
+        url:        http://siteUrl1
+    -
+        name:       siteName2
+        url:        http://siteUrl2
+        proxy_port: 5678
+
